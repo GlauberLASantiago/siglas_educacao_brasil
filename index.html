@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossário de Siglas da Educação Digital no Brasil</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Custom styles and color palette integration */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #F9F9F9;
+            color: #434344;
+        }
+        /* Custom colors from the palette */
+        .bg-custom-blue { background-color: #1E40FB; }
+        .text-custom-blue { color: #1E40FB; }
+        
+        .text-custom-yellow { color: #FECF2F; }
+        .border-custom-yellow { border-color: #FECF2F; }
+
+        .text-custom-green { color: #1FD025; }
+        .border-custom-green { border-color: #1FD025; }
+
+        .text-custom-red { color: #FC0019; }
+        .border-custom-red { border-color: #FC0019; }
+
+        .bg-custom-gray { background-color: #434344; }
+        
+        /* Animation for content cards */
+        .category-card {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Staggered animation delay */
+        main .category-card {
+            animation-delay: calc(0.15s * var(--card-index));
+        }
+    </style>
+</head>
+<body class="transition-colors duration-300">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-5 text-center md:text-left">
+            <h1 class="text-2xl md:text-3xl font-bold text-custom-blue">
+                Glossário de Siglas da Educação Digital no Brasil
+            </h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+        <div class="grid md:grid-cols-2 gap-10">
+            
+            <!-- Category: Leis e Políticas Públicas -->
+            <div class="category-card bg-white p-8 rounded-xl shadow-lg" style="--card-index: 1;">
+                <h2 class="text-2xl font-bold mb-6 text-custom-blue border-b-4 border-custom-blue pb-3">Leis e Políticas Públicas</h2>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <strong class="font-semibold text-gray-800 w-24 flex-shrink-0">LDB:</strong>
+                        <span class="text-gray-600">Lei de Diretrizes e Bases da Educação Nacional</span>
+                    </li>
+                    <li class="flex items-start">
+                        <strong class="font-semibold text-gray-800 w-24 flex-shrink-0">PNED:</strong>
+                        <span class="text-gray-600">Política Nacional de Educação Digital</span>
+                    </li>
+                    <li class="flex items-start">
+                        <strong class="font-semibold text-gray-800 w-24 flex-shrink-0">BNCC:</strong>
+                        <span class="text-gray-600">Base Nacional Comum Curricular</span>
+                    </li>
+                    <li class="flex items-start">
+                        <strong class="font-semibold text-gray-800 w-24 flex-shrink-0">PIEC:</strong>
+                        <span class="text-gray-600">Política de Inovação Educação Conectada</span>
+                    </li>
+                    <li class="flex items-start">
+                        <strong class="font-semibold text-gray-800 w-24 flex-shrink-0">PNE:</strong>
+                        <span class="text-gray-600">Plano Nacional de Educação</span>
+                    </li>
+                    <li class="flex items-start">
+                        <strong class="font-semibold text-gray-800 w-24 flex-shrink-0">FUST:</strong>
+                        <span class="text-gray-600">Fundo de Universalização dos Serviços de Telecomunicações</span>
+                    </li>
+                    <li class="flex items-start">
+                        <strong class="font-semibold text-gray-800 w-24 flex-shrink-0">VAAR:</strong>
+                        <span class="text-gray-600">Valor Aluno Ano Resultado (condicionalidade do Fundeb)</span>
+                    </li>
+                    <li class="flex items-start">
+                        <strong class="font-semibold text-gray-800 w-24 flex-shrink-0">Fundeb:</strong>
+                        <span class="text-gray-600">Fundo de Manutenção e Desenvolvimento da Educação Básica</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Category: Documentos e Órgãos Normativos -->
+            <div class="category-card bg-white p-8 rounded-xl shadow-lg" style="--card-index: 2;">
+                <h2 class="text-2xl font-bold mb-6 text-custom-red border-b-4 border-custom-red pb-3">Documentos e Órgãos Normativos</h2>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <strong class="font-semibold text-gray-800 w-24 flex-shrink-0">DCN:</strong>
+                        <span class="text-gray-600">Diretrizes Curriculares Nacionais</span>
+                    </li>
+                     <li class="flex items-start">
+                        <strong class="font-semibold text-gray-800 w-24 flex-shrink-0">DCNEI:</strong>
+                        <span class="text-gray-600">Diretrizes Curriculares Nacionais para a Educação Infantil</span>
+                    </li>
+                    <li class="flex items-start">
+                        <strong class="font-semibold text-gray-800 w-24 flex-shrink-0">CNE/CEB:</strong>
+                        <span class="text-gray-600">Conselho Nacional de Educação / Câmara de Educação Básica</span>
+                    </li>
+                    <li class="flex items-start">
+                        <strong class="font-semibold text-gray-800 w-24 flex-shrink-0">CENEC:</strong>
+                        <span class="text-gray-600">Comitê Estratégico Nacional de Escolas Conectadas</span>
+                    </li>
+                    <li class="flex items-start">
+                        <strong class="font-semibold text-gray-800 w-24 flex-shrink-0">CE/ENEC:</strong>
+                        <span class="text-gray-600">Comitê Executivo da Estratégia Nacional de Escolas Conectadas</span>
+                    </li>
+                    <li class="flex items-start">
+                        <strong class="font-semibold text-gray-800 w-24 flex-shrink-0">CIF:</strong>
+                        <span class="text-gray-600">Comissão Intergovernamental de Financiamento</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Category: Ferramentas e Plataformas -->
+            <div class="category-card bg-white p-8 rounded-xl shadow-lg" style="--card-index: 3;">
+                <h2 class="text-2xl font-bold mb-6 text-custom-green border-b-4 border-custom-green pb-3">Ferramentas e Plataformas</h2>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <strong class="font-semibold text-gray-800 w-24 flex-shrink-0">MEC:</strong>
+                        <span class="text-gray-600">Ministério da Educação</span>
+                    </li>
+                    <li class="flex items-start">
+                        <strong class="font-semibold text-gray-800 w-24 flex-shrink-0">AVAMEC:</strong>
+                        <span class="text-gray-600">Ambiente Virtual de Aprendizagem do MEC</span>
+                    </li>
+                    <li class="flex items-start">
+                        <strong class="font-semibold text-gray-800 w-24 flex-shrink-0">MEC RED:</strong>
+                        <span class="text-gray-600">Plataforma de Recursos Educacionais Digitais do MEC</span>
+                    </li>
+                    <li class="flex items-start">
+                        <strong class="font-semibold text-gray-800 w-24 flex-shrink-0">RIEH:</strong>
+                        <span class="text-gray-600">Rede de Inovação para a Educação Híbrida</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Category: Outros Documentos -->
+            <div class="category-card bg-white p-8 rounded-xl shadow-lg" style="--card-index: 4;">
+                <h2 class="text-2xl font-bold mb-6 text-yellow-600 border-b-4 border-custom-yellow pb-3">Outros Documentos</h2>
+                 <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <strong class="font-semibold text-gray-800 w-24 flex-shrink-0">PPP:</strong>
+                        <span class="text-gray-600">Projeto Político-Pedagógico</span>
+                    </li>
+                    <li class="flex items-start">
+                        <strong class="font-semibold text-gray-800 w-24 flex-shrink-0">EBEM:</strong>
+                        <span class="text-gray-600">Estratégia Brasileira de Educação Midiática</span>
+                    </li>
+                    <li class="flex items-start">
+                        <strong class="font-semibold text-gray-800 w-24 flex-shrink-0">SEI:</strong>
+                        <span class="text-gray-600">Sistema Eletrônico de Informações</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-custom-gray text-white py-6 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-sm opacity-80">&copy; 2025 - Glossário de Siglas da Educação Digital no Brasil</p>
+        </div>
+    </footer>
+
+</body>
+</html>
